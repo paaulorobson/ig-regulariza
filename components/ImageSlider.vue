@@ -18,11 +18,11 @@ const props = withDefaults(
 </script>
 
 <template>
-    <v-carousel 
-      width="100%" 
-      height="100vh"
+   <v-container :style="{ maxWidth: '1536px' }" class="pa-0">
+    <v-carousel
+      height="700px"
       show-arrows="hover"
-      cycle
+      cycle 
       hide-delimiter-background
     >
       <v-carousel-item
@@ -40,18 +40,23 @@ const props = withDefaults(
         </div>
       </v-carousel-item>
     </v-carousel>
+  </v-container>
 </template>
 
 <style scoped>
-.v-carousel-item img {
+.v-carousel {
+  position: relative;
+  border-radius: 1rem;
+}
+/* .v-carousel-item img {
   object-fit: cover; 
   width: 100%;
   height: 100%;
-}
+} */
 
-.v-carousel-item {
+/* .v-carousel-item {
   position: relative;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -59,7 +64,7 @@ const props = withDefaults(
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(21, 104, 39, 0.7));
+  background: linear-gradient(to bottom, rgba(22, 40, 31, 0.7), rgba(22, 40, 31, 0.7));
   z-index: 1;
 }
 
@@ -76,7 +81,7 @@ const props = withDefaults(
 }
 
 .title {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 600;
   text-transform: uppercase;
   font-style: italic;
@@ -86,5 +91,31 @@ const props = withDefaults(
   margin-top: 1.5rem;
   font-size: 24px;
   font-weight: 500;
+}
+
+.pulsating-image {
+  position: absolute;
+  top: 20%; /* Ajuste a posição vertical */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza a imagem */
+  width: auto; /* Ajuste o tamanho da imagem */
+  height: auto; /* Ajuste o tamanho da imagem */
+  z-index: 1000000; /* Coloca a imagem acima do slider */
+  animation: pulse 2s infinite; /* Adiciona a animação de pulsação */
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
 }
 </style>
