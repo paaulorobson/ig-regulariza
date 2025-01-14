@@ -6,5 +6,6 @@ import Header from '../components/Header.vue'
  
     <Header/>
     <slot />
+    <Footer />
 
 </template>
