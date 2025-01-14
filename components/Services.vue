@@ -1,6 +1,6 @@
 <template>
-  <div class="content pa-4">
-    <v-container :style="{ maxWidth: '1536px' }">
+  <div class="content ">
+    <v-container :style="{ maxWidth: '1536px' }" class="pa-4">
       <h1 class="title">O que fazemos</h1>
       <p class="subtitle">Somos Especialista em Cadastro Territorial Rural e Urbano</p>
       <div class="wrapper">
@@ -134,7 +134,6 @@
 
 .title {
   text-align: center;
-  margin: 3rem 0 0;
   font-size: 3.75rem;
 }
 

@@ -4,6 +4,7 @@ const slides = ref([
   {
     image: "/images/slide1.jpg",
     text: "Prazer Somos a IG Geotecnologia e Regularização de Imóveis Rurais",
+    description: ''
   },
   {
     image: "/images/slide6.jpg",
@@ -23,5 +24,6 @@ const slides = ref([
     <ImageSlider :slides="slides" />
     <About />
     <Services />
+    <Contact />
   </div>
 </template>
