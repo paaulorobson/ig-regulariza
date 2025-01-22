@@ -93,6 +93,7 @@
   background-color: rgb(15, 28, 21);
   margin: 16px;
   height: 300px;
+  border-radius: 8px;
 }
 
 .contact-items { 
