@@ -24,7 +24,7 @@
             <div class="items"><span class="neon-bar"></span> Cadastros Territoriais Rurais</div>
             <div class="items"><span class="neon-bar"></span> Desmembramento e Remebramento</div>
             <div class="items"><span class="neon-bar"></span> Análise de Risco na compra e Venda de Imóveis Rurais</div>
-            <div class="items"><span class="neon-bar"></span> Acompanhamento e Legalização Juntos aos cartórios</div>
+            <div class="items"><span class="neon-bar"></span> Acompanhamento e Legalização Junto aos cartórios</div>
           </v-card-text>
         </v-card>
 

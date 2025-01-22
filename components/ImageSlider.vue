@@ -18,9 +18,9 @@ const props = withDefaults(
 </script>
 
 <template>
-   <v-container :style="{ maxWidth: '1536px' }" class="pa-0">
+  <div class="slider-container">
     <v-carousel
-      height="700px"
+      height="900"
       show-arrows="hover"
       cycle 
       hide-delimiter-background
@@ -40,23 +40,19 @@ const props = withDefaults(
         </div>
       </v-carousel-item>
     </v-carousel>
-  </v-container>
+  </div>
 </template>
 
 <style scoped>
-.v-carousel {
+.slider-container {
   position: relative;
-  border-radius: 1rem;
 }
-/* .v-carousel-item img {
-  object-fit: cover; 
-  width: 100%;
-  height: 100%;
-} */
 
-/* .v-carousel-item {
-  position: relative;
-} */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .overlay {
   position: absolute;
@@ -91,31 +87,5 @@ const props = withDefaults(
   margin-top: 1.5rem;
   font-size: 24px;
   font-weight: 500;
-}
-
-.pulsating-image {
-  position: absolute;
-  top: 20%; /* Ajuste a posição vertical */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Centraliza a imagem */
-  width: auto; /* Ajuste o tamanho da imagem */
-  height: auto; /* Ajuste o tamanho da imagem */
-  z-index: 1000000; /* Coloca a imagem acima do slider */
-  animation: pulse 2s infinite; /* Adiciona a animação de pulsação */
-}
-
-@keyframes pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
 }
 </style>

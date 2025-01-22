@@ -23,7 +23,7 @@
       </v-row>
       <h2 class="subtitle">Missão</h2>
       <div>
-        Se redução de custo, aumento de faturamento, planejamento estratégico, for requisitos importantes para você, a iG Transforma grandes dados em soluções precisas, garantindo decisões mais assertivas para o seu negócio.
+        Se redução de custo, aumento de faturamento, planejamento estratégico, for requisitos importantes para você, a IG Transforma grandes dados em soluções precisas, garantindo decisões mais assertivas para o seu negócio.
         Acreditamos que o Cadastro Territorial transformará a gestão e o planejamento dos municípios no Brasil.
       </div>
     </div>

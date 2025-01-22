@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import About from './about.vue';
+import Services from './services.vue';
+import Contact from './contact.vue';
 
 const slides = ref([
   {
@@ -22,8 +25,8 @@ const slides = ref([
 <template>
   <div>
     <ImageSlider :slides="slides" />
-    <About />
-    <Services />
-    <Contact />
+    <About id="about"/>
+    <Services id="service" />
+    <Contact id="contact"/>
   </div>
 </template>
