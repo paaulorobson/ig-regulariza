@@ -1,51 +1,80 @@
 <template>
-  <v-container :style="{ maxWidth: '1536px' }" class="pa-4">
-    <div class="content">
-      <div class="content-contact">
-        <h2 class="title"> Nossos Contatos </h2>
-        <div class="contact-items">
-          <div class="group">
-            <span class="neon-bar"></span>
-            <p class="label">Email</p>
-            <span>regularizaimoveisrurais@gmail.com</span>
-          </div>
-          <div class="group">
-            <span class="neon-bar"></span>
-            <p class="label">Telefone</p>
-            <span>(98) 9 8153-6601</span>
+  <v-container :style="{ maxWidth: '1536px'}" class="pa-0">
+    <div class="contact">
+      <v-container  class="pa-4">
+      <div class="content">
+        <div class="content-contact">
+          <h2 class="title"> Nossos Contatos </h2>
+          <div class="contact-items">
+            <div class="group">
+              <span class="neon-bar"></span>
+              <p class="label">Email</p>
+              <span>regularizaimoveisrurais@gmail.com</span>
+            </div>
+            <div class="group">
+              <span class="neon-bar"></span>
+              <p class="label">Telefone</p>
+              <span>(98) 9 8153-6601</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-contact">
-        <form class="wrapper">
-          <div class="item">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" class="input"/>
-          </div>
-          <div class="item">
-            <label for="empresa">Empresa</label>
-            <input type="text" id="empresa" class="input"/>
-          </div>
-          <div class="item">
-            <label for="telefone">Telefone</label>
-            <input type="number" id="telefone" class="input"/>
-          </div>
-          <div class="item">
-            <label for="email">Email</label>
-            <input type="email" id="email" class="input"/>
-          </div>
-          <div class="item">
-            <label for="descricao">Escreva aqui sua necessidade...</label>
-            <textarea type="textarea" id="descricao" class="input"/>
-          </div>
-        </form>
-      </div>
+        </div>
+      </v-container>
+        <!-- <div class="form-contact">
+          <form class="wrapper">
+            <div class="item">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" class="input"/>
+            </div>
+            <div class="item">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" class="input"/>
+            </div>
+            <div class="item">
+              <label for="telefone">Telefone</label>
+              <input type="number" id="telefone" class="input"/>
+            </div>
+            <div class="item">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="input"/>
+            </div>
+            <div class="item">
+              <label for="descricao">Escreva aqui sua necessidade...</label>
+              <textarea type="textarea" id="descricao" class="input"/>
+            </div>
+          </form>
+        </div> -->
+      <v-container class="pa-0">
+        <div class="social">
+          <h2 class="title"> Redes Sociais </h2>
+          <v-btn
+            class="ma-2"
+            color="indigo"
+            icon="mdi-facebook"
+          ></v-btn>
+          <v-btn
+            class="ma-2"
+            color="indigo"
+            icon="mdi-instagram"
+          ></v-btn>
+          <v-btn
+            class="ma-2"
+            color="indigo"
+            icon="mdi-linkedin"
+          ></v-btn>
+        </div>
+      </v-container>
     </div>
-
   </v-container>
 </template>
 
 <style scoped>
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px
+}
 
 .content { 
   display: flex;
@@ -56,6 +85,14 @@
   font-size: 2.25rem;
   margin: 0 0 1rem;
   color: rgb(172, 239, 117)
+}
+
+.social {
+  text-align: center;
+  padding: 16px;
+  background-color: rgb(15, 28, 21);
+  margin: 16px;
+  height: 300px;
 }
 
 .contact-items { 
