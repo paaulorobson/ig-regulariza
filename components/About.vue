@@ -17,7 +17,7 @@
           </v-col>
           <v-col>
             <div class="pa-8 ma-2">
-              <img src="/images/cadastrorural.jpg" alt="imagem drone no campo" height="400px" class="image"/>
+              <img src="/images/about.jpeg" alt="imagem drone no campo" height="400px" class="image"/>
             </div>
           </v-col>
       </v-row>

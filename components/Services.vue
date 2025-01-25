@@ -20,7 +20,7 @@
             <v-card-title>Cadastro Territorial Rural/Certificação</v-card-title>
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Georreferenciamento de imóveis rurais</div>
+            <div class="items"><span class="neon-bar"></span> Georeferenciamento de imóveis rurais</div>
             <div class="items"><span class="neon-bar"></span> Certificação de Imóveis Rurais junto ao INCRA (SIGEF)</div>
             <div class="items"><span class="neon-bar"></span> Cadastros Territoriais Rurais</div>
             <div class="items"><span class="neon-bar"></span> Desmembramento e Remebramento</div>
@@ -62,7 +62,7 @@
             class="align-end text-white hover-zoom-image"
             height="200"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
-            src="/images/geoprocessamento.png"
+            src="/images/geoprocessamento.jpeg"
             cover
           >
             <v-card-title>Geoprocessamento/Cartografia</v-card-title>
