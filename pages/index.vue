@@ -24,7 +24,7 @@ const slides = ref([
 
 <template>
   <div>
-    <ImageSlider :slides="slides" />
+    <Slider :slides="slides" id="home"/>
     <About id="about"/>
     <Services id="service" />
     <Contact id="contact"/>

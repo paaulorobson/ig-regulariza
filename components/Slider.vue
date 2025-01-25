@@ -18,9 +18,9 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="slider-container">
+  <v-container class="slider-container pa-0" :style="{ maxWidth: '1536px' }" >
     <v-carousel
-      height="900"
+      height="700"
       show-arrows="hover"
       cycle 
       hide-delimiter-background
@@ -40,7 +40,7 @@ const props = withDefaults(
         </div>
       </v-carousel-item>
     </v-carousel>
-  </div>
+  </v-container>
 </template>
 
 <style scoped>
@@ -48,10 +48,9 @@ const props = withDefaults(
   position: relative;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.v-carousel {
+  margin: 16px 0;
+  border-radius: 16px;
 }
 
 .overlay {
