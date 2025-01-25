@@ -212,4 +212,44 @@
   background-color: #ACEF75;
   box-shadow: 0 0 5px #ACEF75, 0 0 10px #ACEF75, 0 0 20px #ACEF75;
 }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .v-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .v-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
 </style>

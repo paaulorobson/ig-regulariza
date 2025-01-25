@@ -27,30 +27,6 @@ const goLinkedin = () => {
         </div>
         </div>
       </v-container>
-        <!-- <div class="form-contact">
-          <form class="wrapper">
-            <div class="item">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" class="input"/>
-            </div>
-            <div class="item">
-              <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" class="input"/>
-            </div>
-            <div class="item">
-              <label for="telefone">Telefone</label>
-              <input type="number" id="telefone" class="input"/>
-            </div>
-            <div class="item">
-              <label for="email">Email</label>
-              <input type="email" id="email" class="input"/>
-            </div>
-            <div class="item">
-              <label for="descricao">Escreva aqui sua necessidade...</label>
-              <textarea type="textarea" id="descricao" class="input"/>
-            </div>
-          </form>
-        </div> -->
       <v-container class="pa-0">
         <div class="social">
           <h2 class="title"> Redes Sociais </h2>
@@ -158,5 +134,65 @@ const goLinkedin = () => {
   background-color: rgb(22, 40, 31);
   padding: 0.5rem;
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .social {
+    height: auto;
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .social-item {
+    font-size: 1.5rem;
+  }
+
+  .contact-items .group {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .label {
+    font-size: 1.25rem;
+  }
+
+  .social-item {
+    font-size: 1.25rem;
+  }
+
+  .social {
+    margin: 8px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .social-item {
+    font-size: 1rem;
+  }
+
+  .contact-items .group {
+    margin-bottom: 0.5rem;
+  }
 }
 </style>

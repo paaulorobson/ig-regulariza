@@ -73,6 +73,7 @@ const props = withDefaults(
   font-family: 'Inter';
   width: 1000px;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .title {
@@ -86,5 +87,49 @@ const props = withDefaults(
   margin-top: 1.5rem;
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 20px; 
+  }
+
+  .description {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
 }
 </style>

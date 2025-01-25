@@ -48,10 +48,13 @@ const scrollToSection = (id: string) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
   margin-right: 1rem;
+  height: auto;
+  max-height: 80px;
 }
 
 .nav {
@@ -62,5 +65,38 @@ const scrollToSection = (id: string) => {
 
 .sub-nav {
   color: #a07e40;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .nav {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    font-size: 0.875rem;
+    margin: 0 5px;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
 }
 </style>
