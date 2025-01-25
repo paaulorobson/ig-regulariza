@@ -4,17 +4,24 @@ const dayOfWeek = new Date().toLocaleDateString('pt-BR', { weekday: 'long'})
 const temperature = ref(25)
 const loading = ref<boolean>(true); 
 const error = ref<string | null>(null); 
+const weatherDescription = ref<string>('')
 
 const weatherEmoji = computed(() => {
-  if(temperature.value >= 25) {
-    return '☀️'
-  }
-  if(temperature.value < 25 && temperature.value >= 15) {
-    return '🌤️'
-  }
-  else {
-    return '🌧️'
-  }
+  const weatherMap: Record<string, string> = {
+    "céu limpo": "☀️ Céu limpo",
+    "nuvens dispersas": "⛅",
+    "algumas nuvens": "🌥️",
+    "nublado": "☁️",
+    "chuva leve": "🌦️",
+    "chuva moderada": "🌧️",
+    "chuva intensa": "⛈️",
+    "trovoadas com chuva": "⛈️",
+    "neblina": "🌫️",
+    "neve leve": "❄️",
+  };
+
+  const icon = weatherMap[weatherDescription.value]
+  return icon
 })
 
 const detectCity = () => {
@@ -39,7 +46,7 @@ const detectCity = () => {
 
 const fetchCityFromCoordinates = async (latitude: number, longitude: number) => {
   const apiKey = '2d20b2381620de6dce946abb6c677a0b';
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric&lang=pt_br`;
 
   try {
     const response = await fetch(apiUrl);
@@ -48,6 +55,7 @@ const fetchCityFromCoordinates = async (latitude: number, longitude: number) => 
     }
     const data = await response.json();
     temperature.value = Math.floor(data.main.temp);
+    weatherDescription.value = data.weather[0].description;
   } catch (err) {
     error.value = 'Erro ao buscar a cidade. Tente novamente.';
     console.error(err);
