@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Meteorology from './Meteorology.vue';
+
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
@@ -9,13 +11,18 @@ const scrollToSection = (id: string) => {
 </script>
 <template>
 <div class=header>
-  <v-container class="content" :style="{ maxWidth: '1536px' }">
-    <img src="/images/logo-branco.png" alt="IG Geotecnologia" height="80" class="logo"/>
-    <div>
-      <NuxtLink to="/" class="nav">Home</NuxtLink>
-      <NuxtLink class="nav" @click.prevent="scrollToSection('about')">Sobre nós</NuxtLink>
-      <NuxtLink class="nav" @click.prevent="scrollToSection('service')">O que fazemos </NuxtLink>
-      <NuxtLink class="nav" @click.prevent="scrollToSection('contact')">Contato </NuxtLink>
+  <v-container :style="{ maxWidth: '1536px' }">
+    <div class="time">
+      <Meteorology/>
+    </div>
+    <div class="content">
+      <img src="/images/logo-branco.png" alt="IG Geotecnologia" height="80" class="logo"/>
+      <div>
+        <NuxtLink class="nav" @click.prevent="scrollToSection('home')">Home</NuxtLink>
+        <NuxtLink class="nav" @click.prevent="scrollToSection('about')">Sobre nós</NuxtLink>
+        <NuxtLink class="nav" @click.prevent="scrollToSection('service')">O que fazemos </NuxtLink>
+        <NuxtLink class="nav" @click.prevent="scrollToSection('contact')">Contato </NuxtLink>
+      </div>
     </div>
   </v-container>
 </div>
@@ -23,13 +30,18 @@ const scrollToSection = (id: string) => {
 
 <style scoped>
 .header {
-  position: fixed;
+  background-color: rgb(15, 28, 21);
+  position: sticky;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 200px;
   width: 100%;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.time {
+  display: grid;
+  justify-content: start;
 }
 
 .content {
