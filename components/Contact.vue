@@ -1,3 +1,10 @@
+<script setup lang="ts">
+
+const goLinkedin = () => {
+  window.open('https://www.linkedin.com/in/ig-geotecnologia-e-regulariza%C3%A7%C3%A3o-de-im%C3%B3veis-rurais-371322318/')
+}
+
+</script>
 <template>
   <v-container :style="{ maxWidth: '1536px'}" class="pa-0">
     <div class="contact">
@@ -48,19 +55,20 @@
         <div class="social">
           <h2 class="title"> Redes Sociais </h2>
           <v-btn
-            class="ma-2"
-            color="indigo"
+            class="social-item"
             icon="mdi-facebook"
+            size="x-large"
           ></v-btn>
           <v-btn
-            class="ma-2"
-            color="indigo"
+            class="social-item"
             icon="mdi-instagram"
+            size="x-large"
           ></v-btn>
           <v-btn
-            class="ma-2"
-            color="indigo"
+            @click.prevent="goLinkedin"
+            class="social-item"
             icon="mdi-linkedin"
+            size="x-large"
           ></v-btn>
         </div>
       </v-container>
@@ -94,6 +102,12 @@
   margin: 16px;
   height: 300px;
   border-radius: 8px;
+}
+
+.social-item {
+  margin: 4px;
+  background-color: #16281F;
+  color: #ACEF75;
 }
 
 .contact-items { 
