@@ -7,17 +7,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/cadastro-territorial-rural.png"
             cover
           >
-            <v-card-title>Cadastro Territorial Rural/Certificação</v-card-title>
+            <v-card-title class="card-title">Cadastro Territorial Rural/Certificação</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Georeferenciamento de imóveis rurais</div>
@@ -32,17 +32,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/cadastro-territorial-urbano.png"
             cover
           >
-            <v-card-title>Cadastro Territorial Urbano</v-card-title>
+            <v-card-title class="card-title">Cadastro Territorial Urbano</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Levantamento cartográfico de áreas urbanas</div>
@@ -55,17 +55,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/geoprocessamento.jpeg"
             cover
           >
-            <v-card-title>Geoprocessamento/Cartografia</v-card-title>
+            <v-card-title class="card-title">Geoprocessamento/Cartografia</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Geoprocessamento Aplicado ao Meio Ambiente</div>
@@ -81,17 +81,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/mapeamento-drones.png"
             cover
           >
-            <v-card-title>Mapeamento com Drones</v-card-title>
+            <v-card-title class="card-title">Mapeamento com Drones</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Filmagens Aéreas Técnicas</div>
@@ -107,17 +107,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/agricultura-precisao.png"
             cover
           >
-            <v-card-title>Projetos de Agricultura de Precisão</v-card-title>
+            <v-card-title class="card-title">Projetos de Agricultura de Precisão</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Linhas de Plantio</div>
@@ -131,17 +131,17 @@
         <v-card
           class="mx-auto card"
           width="400"
-          max-width="500"
+          max-width="300"
           height="500"
         >
           <v-img
             class="align-end text-white hover-zoom-image"
-            height="200"
+            height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/dados.jpg"
             cover
           >
-            <v-card-title>Ciência de Dados</v-card-title>
+            <v-card-title class="card-title">Ciência de Dados</v-card-title>
           </v-img>
           <v-card-text class="card-text">
             <div class="items"><span class="neon-bar"></span> Análise de dados</div>
@@ -192,6 +192,11 @@
 
 .card:hover .hover-zoom-image {
   transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1rem;
+  text-wrap: inherit;
 }
 
 .card-text { 
