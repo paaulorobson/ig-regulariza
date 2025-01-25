@@ -13,6 +13,7 @@
           <v-img
             class="align-end text-white hover-zoom-image"
             height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/cadastro-territorial-rural.png"
             cover
           >
@@ -37,6 +38,7 @@
           <v-img
             class="align-end text-white hover-zoom-image"
             height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/cadastro-territorial-urbano.png"
             cover
           >
@@ -59,6 +61,7 @@
           <v-img
             class="align-end text-white hover-zoom-image"
             height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/geoprocessamento.png"
             cover
           >
@@ -84,6 +87,7 @@
           <v-img
             class="align-end text-white hover-zoom-image"
             height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/mapeamento-drones.png"
             cover
           >
@@ -109,6 +113,7 @@
           <v-img
             class="align-end text-white hover-zoom-image"
             height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
             src="/images/agricultura-precisao.png"
             cover
           >
@@ -120,6 +125,29 @@
             <div class="items"><span class="neon-bar"></span> Mapa de Produtividade E taxa Variável</div>
             <div class="items"><span class="neon-bar"></span> Analise de índice de vegetação – NDVI</div>
             <div class="items"><span class="neon-bar"></span> Amostragem e Análise de Solo</div>
+          </v-card-text>
+        </v-card>
+
+        <v-card
+          class="mx-auto card"
+          width="400"
+          max-width="500"
+          height="500"
+        >
+          <v-img
+            class="align-end text-white hover-zoom-image"
+            height="200"
+            gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
+            src="/images/dados.jpg"
+            cover
+          >
+            <v-card-title>Ciência de Dados</v-card-title>
+          </v-img>
+          <v-card-text class="card-text">
+            <div class="items"><span class="neon-bar"></span> Análise de dados</div>
+            <div class="items"><span class="neon-bar"></span>  Criação de Dashboard</div>
+            <div class="items"><span class="neon-bar"></span> Transformação de dados em insights estratégicos</div>
+            <div class="items"><span class="neon-bar"></span> Business Intelligence - BI </div>
           </v-card-text>
         </v-card>
       </div>
