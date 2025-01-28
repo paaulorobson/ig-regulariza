@@ -3,6 +3,17 @@ import About from './about.vue';
 import Services from './services.vue';
 import Contact from './contact.vue';
 
+
+useHead({
+  title: 'IG Regulariza Imóveis Rurais',
+  meta: [
+    {
+      name: 'description',
+      content: 'Somos Especialista em Cadastro Territorial Rural e Urbano'
+    }
+  ]
+})
+
 const slides = ref([
   {
     image: "/images/slide1.jpg",
