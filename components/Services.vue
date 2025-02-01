@@ -49,6 +49,8 @@
             <div class="items"><span class="neon-bar"></span> Mapeamento de infraestrutura urbana (redes de água, esgoto, energia, e telecomunicações)</div>
             <div class="items"><span class="neon-bar"></span> Monitoramento de áreas de risco e ocupações irregulares</div>
             <div class="items"><span class="neon-bar"></span> Coleta e processamento de dados para tributação (IPTU, taxas urbanas)</div>
+            <div class="items"><span class="neon-bar"></span> Regularização Fundiária Urbana - REURB</div>
+            <div class="items"><span class="neon-bar"></span> Cadastro Técnico multifinalitario</div>
           </v-card-text>
         </v-card>
 
