@@ -16,7 +16,7 @@ const scrollToSection = (id: string) => {
       <Meteorology/>
     </div>
     <div class="content">
-      <img src="/images/logo-branco.png" alt="IG Geotecnologia" height="80" class="logo"/>
+      <img src="/images/logo-ig.svg" alt="IG Geotecnologia" class="logo"/>
       <div>
         <NuxtLink class="nav" @click.prevent="scrollToSection('home')">Home</NuxtLink>
         <NuxtLink class="nav" @click.prevent="scrollToSection('about')">Sobre nós</NuxtLink>
@@ -52,7 +52,6 @@ const scrollToSection = (id: string) => {
 }
 
 .logo {
-  margin-right: 1rem;
   height: auto;
   max-height: 80px;
 }

@@ -4,6 +4,10 @@ const goLinkedin = () => {
   window.open('https://www.linkedin.com/in/ig-geotecnologia-e-regulariza%C3%A7%C3%A3o-de-im%C3%B3veis-rurais-371322318/')
 }
 
+const goInstagram = () => {
+  window.open('https://www.instagram.com/igregulariza/')
+}
+
 </script>
 <template>
   <v-container :style="{ maxWidth: '1536px'}" class="pa-0">
@@ -36,6 +40,7 @@ const goLinkedin = () => {
             size="x-large"
           ></v-btn>
           <v-btn
+          @click.prevent="goInstagram"
             class="social-item"
             icon="mdi-instagram"
             size="x-large"

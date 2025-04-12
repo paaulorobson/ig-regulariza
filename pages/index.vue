@@ -17,7 +17,7 @@ useHead({
 const slides = ref([
   {
     image: "/images/slide1.jpg",
-    text: "Prazer Somos a IG Geotecnologia e Regularização de Imóveis Rurais",
+    text: "Prazer, Somos a IG Geotecnologia e Regularização de Imóveis Rurais e Urbanos",
     description: ''
   },
   {

@@ -1,7 +1,7 @@
 <template>
   <div class="content ">
     <v-container :style="{ maxWidth: '1536px' }" class="pa-4">
-      <h1 class="title">O que fazemos</h1>
+      <h1 class="title">O que fazemos:</h1>
       <p class="subtitle">Somos Especialista em Cadastro Territorial Rural e Urbano</p>
       <div class="wrapper">
         <v-card
@@ -45,12 +45,11 @@
             <v-card-title class="card-title">Cadastro Territorial Urbano</v-card-title>
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Levantamento cartográfico de áreas urbanas</div>
-            <div class="items"><span class="neon-bar"></span> Mapeamento de infraestrutura urbana (redes de água, esgoto, energia, e telecomunicações)</div>
-            <div class="items"><span class="neon-bar"></span> Monitoramento de áreas de risco e ocupações irregulares</div>
-            <div class="items"><span class="neon-bar"></span> Coleta e processamento de dados para tributação (IPTU, taxas urbanas)</div>
-            <div class="items"><span class="neon-bar"></span> Regularização Fundiária Urbana - REURB</div>
-            <div class="items"><span class="neon-bar"></span> Cadastro Técnico multifinalitario</div>
+            <div class="items"><span class="neon-bar"></span>REURB( Regularização Fundiária Urbana )</div>
+            <div class="items"><span class="neon-bar"></span> Retificação de Área</div>
+            <div class="items"><span class="neon-bar"></span> Desmembramento e Unificação</div>
+            <div class="items"><span class="neon-bar"></span> Cadastros e Georreferenciamento Urbano</div>
+            <div class="items"><span class="neon-bar"></span> Mapeamentos Para tributação ( IPTU )</div>
           </v-card-text>
         </v-card>
 

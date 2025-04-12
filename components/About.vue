@@ -4,7 +4,7 @@
       <div class="wrapper">
         <div>
           <div class="pt-8 ma-2">
-              <h1 class="title">Sobre nós</h1>
+              <h1 class="title">Sobre nós:</h1>
               Nossa empresa se dedica à excelência e à ética em tudo o que faz. Somos guiados por princípios cristãos, como integridade, justiça e respeito ao próximo, que refletem em nosso compromisso com clientes, parceiros e com a sociedade. Valorizamos a transparência e buscamos sempre oferecer soluções que promovam o bem comum, com foco na qualidade e na responsabilidade."
 
               <div class="values">
