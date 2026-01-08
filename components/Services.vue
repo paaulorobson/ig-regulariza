@@ -75,7 +75,7 @@
             class="align-end text-white hover-zoom-image"
             height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
-            src="/images/geoprocessamento.jpeg"
+            src="/images/mapeamento-drones.png"
             cover
           >
             <v-card-title class="card-title"
@@ -140,7 +140,7 @@
             class="align-end text-white hover-zoom-image"
             height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
-            src="/images/agricultura-precisao.png"
+            src="/images/geoprocessamento.jpeg"
             cover
           >
             <v-card-title class="card-title"
