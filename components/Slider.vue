@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 interface Slide {
   image: string;
   text: string;
@@ -7,23 +6,23 @@ interface Slide {
 }
 
 const props = withDefaults(
-    defineProps<{
-      slides: Slide[]
-    }>(),
-    {
-      slides: () => []
-    }
-  )
-
+  defineProps<{
+    slides: Slide[];
+  }>(),
+  {
+    slides: () => [],
+  }
+);
 </script>
 
 <template>
-  <v-container class="slider-container pa-0" :style="{ maxWidth: '1536px' }" >
+  <v-container class="slider-container pa-0" :style="{ maxWidth: '1536px' }">
     <v-carousel
       height="700"
       show-arrows="hover"
-      cycle 
+      cycle
       hide-delimiter-background
+      style="margin: 1rem 0 0 0"
     >
       <v-carousel-item
         v-for="(slide, index) in slides"
@@ -35,7 +34,7 @@ const props = withDefaults(
         <div class="d-flex fill-height justify-center align-center">
           <div class="content">
             <h1 class="title">{{ slide.text }}</h1>
-            <p class="description"> {{ slide.description }}</p>
+            <p class="description">{{ slide.description }}</p>
           </div>
         </div>
       </v-carousel-item>
@@ -59,7 +58,11 @@ const props = withDefaults(
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(22, 40, 31, 0.7), rgba(22, 40, 31, 0.7));
+  background: linear-gradient(
+    to bottom,
+    rgba(22, 40, 31, 0.7),
+    rgba(22, 40, 31, 0.7)
+  );
   z-index: 1;
 }
 
@@ -70,7 +73,7 @@ const props = withDefaults(
 }
 
 .content {
-  font-family: 'Inter';
+  font-family: "Inter";
   width: 1000px;
   text-align: center;
   padding: 0 2rem;
@@ -124,7 +127,7 @@ const props = withDefaults(
   }
 
   .title {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .description {

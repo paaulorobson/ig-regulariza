@@ -4,30 +4,65 @@
       <div class="wrapper">
         <div>
           <div class="pt-8 ma-2">
-              <h1 class="title">Sobre nós:</h1>
-              Nossa empresa se dedica à excelência e à ética em tudo o que faz. Somos guiados por princípios cristãos, como integridade, justiça e respeito ao próximo, que refletem em nosso compromisso com clientes, parceiros e com a sociedade. Valorizamos a transparência e buscamos sempre oferecer soluções que promovam o bem comum, com foco na qualidade e na responsabilidade."
-
-              <div class="values">
-                <h2 class="subtitle">Valores</h2>
-                <div class="items"><span class="neon-bar"></span> Empreendedorismo é um dom</div>
-                <div class="items"><span class="neon-bar"></span> Transparência</div>
-                <div class="items"><span class="neon-bar"></span> Ética inegociável</div>
-                <div class="items"><span class="neon-bar"></span> Honestidade</div>
-                <div class="items"><span class="neon-bar"></span> Conhecimento</div>
+            <div class="wrapper-about">
+              <div>
+                <h1 class="title">Sobre nós</h1>
+                Nossa empresa se dedica à excelência e à ética em tudo o que
+                faz. Somos guiados por princípios cristãos, como integridade,
+                justiça e respeito ao próximo, que refletem em nosso compromisso
+                com clientes, parceiros e com a sociedade. Valorizamos a
+                transparência e buscamos sempre oferecer soluções que promovam o
+                bem comum, com foco na qualidade e na responsabilidade."
               </div>
-          </div>
-        </div>
-        <div>
-          <div class="pa-8 ma-2">
-            <img src="/images/about.jpeg" alt="imagem drone no campo" class="image"/>
+              <div class="pa-8 ma-2">
+                <img
+                  src="/images/about.jpeg"
+                  alt="imagem drone no campo"
+                  class="image"
+                />
+              </div>
+            </div>
+
+            <h2 class="subtitle">Por que escolher a IG Geotecnologia?</h2>
+            A <strong>IG Geotecnologia</strong> atua a partir de um modelo
+            moderno de consultoria, baseado em tecnologia, inteligência
+            territorial e dados geoespaciais. <br />Nossa operação é estruturada
+            em um ecossistema nacional de parceiros técnicos, o que garante
+            escala, agilidade e qualidade técnica em projetos realizados em
+            diferentes regiões do Brasil. <br />Entregamos diagnósticos
+            precisos, monitoramento contínuo e suporte estratégico, apoiando
+            decisões seguras e sustentáveis, sempre com atuação consultiva,
+            preventiva e orientada por dados.
+
+            <div class="values">
+              <h3 class="subtitle">Valores</h3>
+              <div class="items">
+                <span class="neon-bar"></span> Empreendedorismo é um dom
+              </div>
+              <div class="items">
+                <span class="neon-bar"></span> Transparência
+              </div>
+              <div class="items">
+                <span class="neon-bar"></span> Ética inegociável
+              </div>
+              <div class="items">
+                <span class="neon-bar"></span> Honestidade
+              </div>
+              <div class="items">
+                <span class="neon-bar"></span> Conhecimento
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mission">
-        <h2 class="subtitle">Missão</h2>
+      <div class="ma-2">
+        <h3 class="subtitle">Missão</h3>
         <div>
-          Se redução de custo, aumento de faturamento, planejamento estratégico, for requisitos importantes para você, a IG Transforma grandes dados em soluções precisas, garantindo decisões mais assertivas para o seu negócio.
-          Acreditamos que o Cadastro Territorial transformará a gestão e o planejamento dos municípios no Brasil.
+          Se redução de custo, aumento de faturamento, planejamento estratégico,
+          for requisitos importantes para você, a IG Transforma grandes dados em
+          soluções precisas, garantindo decisões mais assertivas para o seu
+          negócio. Acreditamos que o Cadastro Territorial transformará a gestão
+          e o planejamento dos municípios no Brasil.
         </div>
       </div>
     </div>
@@ -37,6 +72,7 @@
 <style scoped>
 .title {
   font-size: 3.75rem;
+  margin: 3rem 0 1rem;
 }
 
 .wrapper {
@@ -46,12 +82,21 @@
   justify-content: space-evenly;
 }
 
+.wrapper-about {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about {
   background-image: url(/images/padrao.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: radial-gradient(50% 100% at 50% 0%, #2E482C 0%, #16281F 100%);
+  background-image: radial-gradient(
+    50% 100% at 50% 0%,
+    #2e482c 0%,
+    #16281f 100%
+  );
   margin-bottom: 3rem;
 }
 
@@ -73,9 +118,9 @@
 .neon-bar {
   height: 2px;
   width: 24px;
-  background-color: #ACEF75;
+  background-color: #acef75;
   display: inline-block;
-  box-shadow: 0 0 5px #ACEF75, 0 0 10px #ACEF75, 0 0 20px #ACEF75;
+  box-shadow: 0 0 5px #acef75, 0 0 10px #acef75, 0 0 20px #acef75;
 }
 
 @media (max-width: 1024px) {
@@ -88,11 +133,17 @@
   }
 
   .image {
-    max-width: 350px;
+    display: none;
+  }
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   .items {
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
   }
 }
@@ -154,5 +205,4 @@
     gap: 10px;
   }
 }
-
 </style>

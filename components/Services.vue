@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <v-container :style="{ maxWidth: '1536px' }" class="pa-4">
-      <h1 class="title">O que fazemos:</h1>
+      <h1 class="title">O que fazemos</h1>
       <p class="subtitle">
         Somos Especialista em Cadastro Territorial Rural e Urbano
       </p>
