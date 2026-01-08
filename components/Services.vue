@@ -6,7 +6,7 @@
         Somos Especialista em Cadastro Territorial Rural e Urbano
       </p>
       <div class="wrapper">
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -38,7 +38,7 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -70,7 +70,7 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -103,7 +103,7 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -135,7 +135,7 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -164,7 +164,7 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto card" width="400" max-width="300" height="500">
+        <v-card class="mx-auto card" width="400" max-width="300" height="350">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
