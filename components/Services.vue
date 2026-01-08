@@ -1,15 +1,12 @@
 <template>
-  <div class="content ">
+  <div class="content">
     <v-container :style="{ maxWidth: '1536px' }" class="pa-4">
       <h1 class="title">O que fazemos:</h1>
-      <p class="subtitle">Somos Especialista em Cadastro Territorial Rural e Urbano</p>
+      <p class="subtitle">
+        Somos Especialista em Cadastro Territorial Rural e Urbano
+      </p>
       <div class="wrapper">
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -17,24 +14,31 @@
             src="/images/cadastro-territorial-rural.png"
             cover
           >
-            <v-card-title class="card-title">Cadastro Territorial Rural/Certificação</v-card-title>
+            <v-card-title class="card-title">Mercado Rural</v-card-title>
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Georeferenciamento de imóveis rurais</div>
-            <div class="items"><span class="neon-bar"></span> Certificação de Imóveis Rurais junto ao INCRA (SIGEF)</div>
-            <div class="items"><span class="neon-bar"></span> Cadastros Territoriais Rurais</div>
-            <div class="items"><span class="neon-bar"></span> Desmembramento e Remebramento</div>
-            <div class="items"><span class="neon-bar"></span> Análise de Risco na compra e Venda de Imóveis Rurais</div>
-            <div class="items"><span class="neon-bar"></span> Acompanhamento e Legalização Junto aos cartórios</div>
+            <div class="items">
+              <span class="neon-bar"></span>
+              <div>Cadastros Rurais</div>
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Georreferenciamento e Certificação
+              (INCRA)
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Retificação de Áreas
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Desmembramento e Remebramentos
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Análise de Risco na compra e Venda
+              de Imóveis Rurais
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -42,23 +46,31 @@
             src="/images/cadastro-territorial-urbano.png"
             cover
           >
-            <v-card-title class="card-title">Cadastro Territorial Urbano</v-card-title>
+            <v-card-title class="card-title">Mercado Urbano</v-card-title>
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span>REURB( Regularização Fundiária Urbana )</div>
-            <div class="items"><span class="neon-bar"></span> Retificação de Área</div>
-            <div class="items"><span class="neon-bar"></span> Desmembramento e Unificação</div>
-            <div class="items"><span class="neon-bar"></span> Cadastros e Georreferenciamento Urbano</div>
-            <div class="items"><span class="neon-bar"></span> Mapeamentos Para tributação ( IPTU )</div>
+            <div class="items">
+              <span class="neon-bar"></span>Regularização Fundiária Urbana
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Georreferenciamento de Imóveis
+              Urbanos
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Retificação e Unificação de Áreas
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Atualização Cadastral para Registro
+              Imobiliário
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Mapeamento Urbano e Cadastro
+              Técnico Multifinalitário
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -66,51 +78,64 @@
             src="/images/geoprocessamento.jpeg"
             cover
           >
-            <v-card-title class="card-title">Geoprocessamento/Cartografia</v-card-title>
+            <v-card-title class="card-title"
+              >Geotecnologias e Drones</v-card-title
+            >
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Geoprocessamento Aplicado ao Meio Ambiente</div>
-            <div class="items"><span class="neon-bar"></span>  Geoprocessamento Aplicado ao Urbanismo e Planejamento</div>
-            <div class="items"><span class="neon-bar"></span> Geoprocessamento Aplicado a Mineração</div>
-            <div class="items"><span class="neon-bar"></span> Geoprocessamento Para Análises Imobiliárias</div>
-            <div class="items"><span class="neon-bar"></span> Mapeamento de áreas para credito de carbono</div>
-            <div class="items"><span class="neon-bar"></span> Criação de Banco de Dados</div>
-            <div class="items"><span class="neon-bar"></span> Produção de Mapas Temáticos</div>
+            <div class="items">
+              <span class="neon-bar"></span> Mapeamento Aéreo com Drones
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Ortofotos e Cartografia de Precisão
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Topografia do Terreno
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Modelos Digitais de Superfície
+              (MDS) e de Terreno (MDT)
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Vetorização e Interpretação
+              Cartográfica
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
             gradient="to top right, rgba(172, 239, 117,.33), rgba(25,32,72,.7)"
-            src="/images/mapeamento-drones.png"
+            src="/images/sustentabilidade.jpg"
             cover
           >
-            <v-card-title class="card-title">Mapeamento com Drones</v-card-title>
+            <v-card-title class="card-title">Sustentabilidade</v-card-title>
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Filmagens Aéreas Técnicas</div>
-            <div class="items"><span class="neon-bar"></span>  Cálculo de Volume</div>
-            <div class="items"><span class="neon-bar"></span> Topografia do Terreno </div>
-            <div class="items"><span class="neon-bar"></span> Ortofoto</div>
-            <div class="items"><span class="neon-bar"></span> Vetorização das feições cartográficas de interesse</div>
-            <div class="items"><span class="neon-bar"></span> Modelo Digital de Terreno</div>
-            <div class="items"><span class="neon-bar"></span> Modelo Digital de Superfície</div>
+            <div class="items">
+              <span class="neon-bar"></span> Gestão Territorial e Diagnóstico
+              Ambiental para Projetos de Carbono
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Due Diligence Ambiental para
+              Negócios e Empreendimentos
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Compliance Ambiental Preventivo
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Inteligência Territorial para
+              Planejamento Ambiental
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Capacitação e Mentorias Ambientais
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -118,23 +143,28 @@
             src="/images/agricultura-precisao.png"
             cover
           >
-            <v-card-title class="card-title">Projetos de Agricultura de Precisão</v-card-title>
+            <v-card-title class="card-title"
+              >Geoprocessamento Aplicado a Setores Econômicos</v-card-title
+            >
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Linhas de Plantio</div>
-            <div class="items"><span class="neon-bar"></span>  Curva de Nível</div>
-            <div class="items"><span class="neon-bar"></span> Mapa de Produtividade E taxa Variável</div>
-            <div class="items"><span class="neon-bar"></span> Analise de índice de vegetação – NDVI</div>
-            <div class="items"><span class="neon-bar"></span> Amostragem e Análise de Solo</div>
+            <div class="items">
+              <span class="neon-bar"></span> Urbanismo e Planejamento
+            </div>
+            <div class="items"><span class="neon-bar"></span> Mineração</div>
+            <div class="items">
+              <span class="neon-bar"></span> Agricultura e Florestas
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Produção de mapas temáticos
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Due Diligence Geoespacial
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card
-          class="mx-auto card"
-          width="400"
-          max-width="300"
-          height="500"
-        >
+        <v-card class="mx-auto card" width="400" max-width="300" height="500">
           <v-img
             class="align-end text-white hover-zoom-image"
             height="150"
@@ -142,13 +172,23 @@
             src="/images/dados.jpg"
             cover
           >
-            <v-card-title class="card-title">Ciência de Dados</v-card-title>
+            <v-card-title class="card-title"
+              >Análise de Dados e Inteligência Artificial</v-card-title
+            >
           </v-img>
           <v-card-text class="card-text">
-            <div class="items"><span class="neon-bar"></span> Análise de dados</div>
-            <div class="items"><span class="neon-bar"></span>  Criação de Dashboard</div>
-            <div class="items"><span class="neon-bar"></span> Transformação de dados em insights estratégicos</div>
-            <div class="items"><span class="neon-bar"></span> Business Intelligence - BI </div>
+            <div class="items">
+              <span class="neon-bar"></span> Criação e gestão de bancos de dados
+              espaciais
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Dashboards ESG e relatórios para
+              empresas
+            </div>
+            <div class="items">
+              <span class="neon-bar"></span> Desenvolvimento de sistemas de
+              Gestão Territorial (SIGWeb) personalizados
+            </div>
           </v-card-text>
         </v-card>
       </div>
@@ -170,7 +210,7 @@
   font-size: 1.2rem;
   text-align: center;
   margin: 0 0 3rem;
-  color: rgb(172, 239, 117)
+  color: rgb(172, 239, 117);
 }
 
 .wrapper {
@@ -200,13 +240,14 @@
   text-wrap: inherit;
 }
 
-.card-text { 
+.card-text {
   color: #fff;
 }
 
 .items {
   display: grid;
   grid-template-columns: auto 1fr;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
 }
@@ -215,8 +256,8 @@
   height: 8px;
   width: 8px;
   border-radius: 50px;
-  background-color: #ACEF75;
-  box-shadow: 0 0 5px #ACEF75, 0 0 10px #ACEF75, 0 0 20px #ACEF75;
+  background-color: #acef75;
+  box-shadow: 0 0 5px #acef75, 0 0 10px #acef75, 0 0 20px #acef75;
 }
 
 @media (max-width: 1200px) {
