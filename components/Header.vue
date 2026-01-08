@@ -1,31 +1,38 @@
 <script setup lang="ts">
-import Meteorology from './Meteorology.vue';
+import Meteorology from "./Meteorology.vue";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 };
-
 </script>
 <template>
-<div class=header>
-  <v-container :style="{ maxWidth: '1536px' }">
-    <div class="time">
-      <Meteorology/>
-    </div>
-    <div class="content">
-      <img src="/images/logo-ig.svg" alt="IG Geotecnologia" class="logo"/>
-      <div>
-        <NuxtLink class="nav" @click.prevent="scrollToSection('home')">Home</NuxtLink>
-        <NuxtLink class="nav" @click.prevent="scrollToSection('about')">Sobre nós</NuxtLink>
-        <NuxtLink class="nav" @click.prevent="scrollToSection('service')">O que fazemos </NuxtLink>
-        <NuxtLink class="nav" @click.prevent="scrollToSection('contact')">Contato </NuxtLink>
+  <div class="header">
+    <v-container :style="{ maxWidth: '1536px' }">
+      <div class="time">
+        <Meteorology />
       </div>
-    </div>
-  </v-container>
-</div>
+      <div class="content">
+        <img src="/images/logo-ig.svg" alt="IG Geotecnologia" class="logo" />
+        <div>
+          <NuxtLink class="nav" @click.prevent="scrollToSection('home')"
+            >Home</NuxtLink
+          >
+          <NuxtLink class="nav" @click.prevent="scrollToSection('about')"
+            >Sobre nós</NuxtLink
+          >
+          <NuxtLink class="nav" @click.prevent="scrollToSection('service')"
+            >O que fazemos
+          </NuxtLink>
+          <NuxtLink class="nav" @click.prevent="scrollToSection('contact')"
+            >Contato
+          </NuxtLink>
+        </div>
+      </div>
+    </v-container>
+  </div>
 </template>
 
 <style scoped>
@@ -41,7 +48,7 @@ const scrollToSection = (id: string) => {
 
 .time {
   display: grid;
-  justify-content: start;
+  justify-content: flex-end;
 }
 
 .content {
@@ -59,7 +66,7 @@ const scrollToSection = (id: string) => {
 .nav {
   font-size: 1.25rem;
   margin-right: 1rem;
-  color:  #fff;
+  color: #fff;
 }
 
 .sub-nav {
@@ -75,7 +82,7 @@ const scrollToSection = (id: string) => {
   .content {
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
   }
 
   .nav {
